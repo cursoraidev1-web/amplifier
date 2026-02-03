@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { HashRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
+import LogoLoader from './PageLoader';
 
 const NavLink = ({ to, children, active, onClick }: { to: string, children?: React.ReactNode, active: boolean, onClick?: () => void }) => (
   <Link 
@@ -143,6 +144,7 @@ const Navbar: React.FC = () => {
 const App: React.FC = () => {
   return (
     <Router>
+      {/* <LogoLoader> */}
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
@@ -152,6 +154,7 @@ const App: React.FC = () => {
           </Routes>
         </main>
       </div>
+      {/* </LogoLoader> */}
     </Router>
   );
 };
