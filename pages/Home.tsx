@@ -172,19 +172,39 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             <div className="col-span-1 lg:col-span-1">
               <Link to="/" className="flex items-center gap-2 mb-6">
-                <img src="https://drive.google.com/uc?export=view&id=1mJkBydECdYbuhZ53uAD4Ogj8DRsh5gtB" alt="Logo" className="h-10 w-auto" />
+                <img src="logo.png" alt="Logo" className="h-10 w-auto" />
               </Link>
               <p className="text-slate-500 font-medium mb-8 leading-relaxed">Providing structured, compliant, and reliable support for individuals and small businesses in Nigeria.</p>
               <div className="flex gap-4">
-                 <a href="https://www.facebook.com/profile.php?id=100083856664885&mibextid=ZbWKwL" className="size-11 rounded-xl bg-slate-100 flex items-center justify-center hover:bg-primary hover:text-white transition-all">
-                   <span className="material-symbols-outlined">facebook</span>
-                 </a>
-                 <a href="https://vm.tiktok.com/ZSHKvfhsVW1dY-9xhTF/" className="size-11 rounded-xl bg-slate-100 flex items-center justify-center hover:bg-black hover:text-white transition-all">
-                   <span className="material-symbols-outlined">music_note</span>
-                 </a>
-                 <a href="https://wa.me/2349067243214" className="size-11 rounded-xl bg-slate-100 flex items-center justify-center hover:bg-green-600 hover:text-white transition-all text-green-600">
-                   <span className="material-symbols-outlined">chat</span>
-                 </a>
+                {/* Facebook */}
+                <a 
+                  href="https://www.facebook.com/profile.php?id=100083856664885&mibextid=ZbWKwL" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="size-11 rounded-xl bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-[#1877F2] hover:text-white transition-all shadow-sm"
+                >
+                  <i className="fa-brands fa-facebook-f text-lg"></i>
+                </a>
+
+                {/* TikTok */}
+                <a 
+                  href="https://vm.tiktok.com/ZSHKvfhsVW1dY-9xhTF/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="size-11 rounded-xl bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-black hover:text-white transition-all shadow-sm"
+                >
+                  <i className="fa-brands fa-tiktok text-lg"></i>
+                </a>
+
+                {/* WhatsApp */}
+                <a 
+                  href="https://wa.me/2349067243214" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="size-11 rounded-xl bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-[#25D366] hover:text-white transition-all shadow-sm"
+                >
+                  <i className="fa-brands fa-whatsapp text-xl"></i>
+                </a>
               </div>
             </div>
 
@@ -229,7 +249,7 @@ const Home: React.FC = () => {
             </div>
           </div>
           <div className="mt-20 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-400 text-sm font-bold">
-            <p>© 2024 Amplifier Business Hub. Registered & Regulated.</p>
+            <p>© 2026 Amplifier Business Hub. Registered & Regulated.</p>
             <div className="flex gap-8">
               <a href="#" className="hover:text-primary">Privacy Policy</a>
               <a href="#" className="hover:text-primary">Terms</a>
